@@ -75,8 +75,8 @@
      <y> 0 </y>
      <z>-2 </z>
    </location>
-   <pointmass name="station1"><!-- empty 370-gal tank -->
-      <weight unit="LBS"> 180 </weight>
+   <pointmass name="station1"><!-- unused -->
+      <weight unit="LBS"> 0 </weight>
       <location name="POINTMASS" unit="IN">
           <x>    6 </x>
           <y> -120 </y>
@@ -91,8 +91,8 @@
           <z>  -20 </z>
       </location>
    </pointmass>
-   <pointmass name="station3"><!-- unused -->
-      <weight unit="LBS"> 0 </weight>
+   <pointmass name="station3"><!-- empty 600 gal drop tank -->
+      <weight unit="LBS"> 220 </weight>
       <location name="POINTMASS" unit="IN">
           <x>    0 </x>
           <y>    0 </y>
@@ -107,8 +107,8 @@
           <z>  -20 </z>
       </location>
    </pointmass>
-   <pointmass name="station5"><!-- empty 370-gal tank -->
-      <weight unit="LBS"> 180 </weight>
+   <pointmass name="station5"><!-- unused -->
+      <weight unit="LBS"> 0 </weight>
       <location name="POINTMASS" unit="IN">
           <x>    6 </x>
           <y>  120 </y>
@@ -129,7 +129,7 @@
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">      18000.0 </spring_coeff>
-   <damping_coeff unit="LBS/FT/SEC">  7000.0 </damping_coeff>
+   <damping_coeff unit="LBS/FT/SEC">  9000.0 </damping_coeff>
    <max_steer unit="DEG"> 60.00 </max_steer>
    <brake_group>NONE</brake_group>
    <retractable>1</retractable>
@@ -145,7 +145,7 @@
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">      41000.0 </spring_coeff>
-   <damping_coeff unit="LBS/FT/SEC">  8500.0 </damping_coeff>
+   <damping_coeff unit="LBS/FT/SEC"> 18500.0 </damping_coeff>
    <max_steer unit="DEG">0</max_steer>
    <brake_group>LEFT</brake_group>
    <retractable>1</retractable>
@@ -161,7 +161,7 @@
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">      41000.0 </spring_coeff>
-   <damping_coeff unit="LBS/FT/SEC">  8500.0 </damping_coeff>
+   <damping_coeff unit="LBS/FT/SEC"> 18500.0 </damping_coeff>
    <max_steer unit="DEG">0</max_steer>
    <brake_group>RIGHT</brake_group>
    <retractable>1</retractable>
@@ -227,8 +227,6 @@
     </location>
     <feed>0</feed>
     <feed>1</feed>
-    <feed>2</feed>
-    <feed>3</feed>
     <thruster file="direct">
      <location unit="IN">
        <x> 190 </x>
@@ -251,8 +249,6 @@
     </location>
     <feed>0</feed>
     <feed>1</feed>
-    <feed>2</feed>
-    <feed>3</feed>
     <thruster file="direct">
      <location unit="IN">
        <x> 190 </x>
@@ -293,7 +289,7 @@
      <contents unit="LBS"> 3600.00 </contents>
   </tank>
 
-  <!-- Left 370 gallon drop tank -->
+  <!-- Left 370 gallon drop tank 
   <tank type="FUEL" number="2">
      <location unit="IN">
        <x>      0 </x>
@@ -304,8 +300,9 @@
      <capacity unit="LBS"> 2440.00 </capacity>
      <contents unit="LBS">    0.00 </contents>
   </tank>
+  -->
 
-  <!-- Right 370 gallon drop tank -->
+  <!-- Right 370 gallon drop tank
   <tank type="FUEL" number="3">
      <location unit="IN">
        <x>      0 </x>
@@ -316,6 +313,7 @@
      <capacity unit="LBS"> 2440.00 </capacity>
      <contents unit="LBS">    0.00 </contents>
   </tank>
+  -->
 
   <dump-rate unit="LBS/MIN"> 2500 </dump-rate>
 

@@ -1,3 +1,29 @@
+FGUK's McDonnell Douglas F-4EJ Phantom II
+------------------------------------------
+
+http://fguk.eu/index.php/hangar/viewdownload/8-military-jets/94-mcdonnell-douglas-f-4ej-phantom-ii
+
+![FGUK IMAGE](http://www.fguk.eu/images/jdownloads/screenshots/thumbnails/fgfs-screen-0420.png)
+
+This aircraft requires the DAVE PACK available <a href="http://fguk.eu/Lee%20Elliott,%20Josh%20Babcock">HERE</a>
+
+Release notes:
+--------------
+
+
+V1.3
+------
+ 
+* YASIM version now available.
+* Selectable payload options available on the YASIM version.
+* Both versions have livery selection enabled. NOTE this aircraft uses JPEG liveried. Please read README-Liveries contained in the folder before painting new liveries.
+* Cockpit has been upgraded in both versions.
+* Updated visual effects and lighting.
+
+
+
+********
+
 NOTE:
 
 License:  Creative Commons, (CC-BY-NC-SA)

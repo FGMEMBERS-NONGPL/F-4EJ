@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+	
+
+<!--station left 1 -->
+
+
+
+<model>
+<name>leftDroptank</name>
+<path>Aircraft/F-4EJ/Models/Stores/Tank_370/tank_370_sta1.xml</path>
+
+<offsets>
+<x-m> 0.3</x-m>
+   <y-m>-3.65</y-m>
+   <z-m>-0.85</z-m>
+   <pitch-deg>-2</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>leftDroptank</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[0]/selected</property>
+<value>370_Gal_tank</value>
+</equals>
+<equals>
+<property>controls/armament/station[0]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+	
+<!-- station left 2 -->
+
+<model>
+<name>leftSidewinders</name>
+<path>Aircraft/F-4EJ/Models/Stores/AIM-9/2xsidewinderL.xml</path>
+
+<offsets>
+<x-m> 0</x-m>
+   <y-m>-0.02</y-m>
+   <z-m>0.0</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>leftSidewinders</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[1]/selected</property>
+<value>2xAIM-9</value>
+</equals>
+<equals>
+<property>controls/armament/station[1]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+<model>
+<name>leftm117</name>
+<path>Aircraft/F-4EJ/Models/Stores/aim9+117L.xml</path>
+
+<offsets>
+<x-m> 0</x-m>
+   <y-m>-0.02</y-m>
+   <z-m>0.0</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>leftm117</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[1]/selected</property>
+<value>2xAIM-9 + GCS-1 MOD II</value>
+</equals>
+<equals>
+<property>controls/armament/station[1]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+<model>
+<name>leftm82</name>
+<path>Aircraft/F-4EJ/Models/Stores/aim9+82L.xml</path>
+
+<offsets>
+<x-m> 0</x-m>
+   <y-m>-0.02</y-m>
+   <z-m>0.0</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>leftm82</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[1]/selected</property>
+<value>2xAIM-9 + GCS-1 MOD I</value>
+</equals>
+<equals>
+<property>controls/armament/station[1]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+<!-- Fuselage Front left -->
+
+<model>
+<name>FL-Sparrow</name>
+<path>Aircraft/F-4EJ/Models/Stores/AIM-7/sparrow.xml</path>
+
+<offsets>
+<x-m>-3.5</x-m>
+   <y-m>-0.45</y-m>
+   <z-m>-0.25</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>FL-Sparrow</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[2]/selected</property>
+<value>AIM-7</value>
+</equals>
+<equals>
+<property>controls/armament/station[2]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+
+
+<!-- Fuselage Rear left -->
+
+<model>
+<name>RL-Sparrow</name>
+<path>Aircraft/F-4EJ/Models/Stores/AIM-7/sparrow.xml</path>
+
+<offsets>
+<x-m> 1.8</x-m>
+   <y-m>-1.1</y-m>
+   <z-m>-0.36</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>RL-Sparrow</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[3]/selected</property>
+<value>AIM-7</value>
+</equals>
+<equals>
+<property>controls/armament/station[3]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+	
+
+<!-- center station -->
+
+<model>
+<name>CentreDroptank</name>
+<path>Aircraft/F-4EJ/Models/Stores/Tank_370/tank_370.xml</path>
+
+<offsets>
+<x-m> 0</x-m>
+   <y-m> 0</y-m>
+   <z-m>-0.8</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>CentreDroptank</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[4]/selected</property>
+<value>370_Gal_tank</value>
+</equals>
+<equals>
+<property>controls/armament/station[4]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+<model>
+<name>LargeCentreDroptank</name>
+<path>Aircraft/F-4EJ/Models/Stores/Tank_600/tank_600.xml</path>
+
+<offsets>
+<x-m> 0</x-m>
+   <y-m> 0</y-m>
+   <z-m>-0.1</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>LargeCentreDroptank</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[4]/selected</property>
+<value>600_Gal_tank</value>
+</equals>
+<equals>
+<property>controls/armament/station[4]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+<!-- Fuselage Rear right -->
+
+<model>
+<name>RR-Sparrow</name>
+<path>Aircraft/F-4EJ/Models/Stores/AIM-7/sparrow.xml</path>
+
+<offsets>
+<x-m> 1.8</x-m>
+   <y-m>1.1</y-m>
+   <z-m>-0.36</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>RR-Sparrow</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[5]/selected</property>
+<value>AIM-7</value>
+</equals>
+<equals>
+<property>controls/armament/station[5]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+
+<!-- Fuselage Front right -->
+  
+<model>
+<name>RF-Sparrow</name>
+<path>Aircraft/F-4EJ/Models/Stores/AIM-7/sparrow.xml</path>
+
+<offsets>
+<x-m>-3.5</x-m>
+   <y-m>0.45</y-m>
+   <z-m>-0.25</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>RF-Sparrow</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[6]/selected</property>
+<value>AIM-7</value>
+</equals>
+<equals>
+<property>controls/armament/station[6]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>  
+
+
+	
+<!-- station right 2 -->
+
+
+  <model>
+<name>rightSidewinders</name>
+<path>Aircraft/F-4EJ/Models/Stores/AIM-9/2xsidewinderR.xml</path>
+
+<offsets>
+<x-m> 0</x-m>
+   <y-m>-0.02</y-m>
+   <z-m>0.0</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>rightSidewinders</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[7]/selected</property>
+<value>2xAIM-9</value>
+</equals>
+<equals>
+<property>controls/armament/station[7]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+<model>
+<name>rightm117</name>
+<path>Aircraft/F-4EJ/Models/Stores/aim9+117R.xml</path>
+
+<offsets>
+<x-m> 0</x-m>
+   <y-m>0.02</y-m>
+   <z-m>0.0</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>rightm117</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[7]/selected</property>
+<value>2xAIM-9 + GCS-1 MOD II</value>
+</equals>
+<equals>
+<property>controls/armament/station[7]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+<model>
+<name>rightm82</name>
+<path>Aircraft/F-4EJ/Models/Stores/aim9+82R.xml</path>
+
+<offsets>
+<x-m> 0</x-m>
+   <y-m>0.02</y-m>
+   <z-m>0.0</z-m>
+   <pitch-deg>0</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>rightm82</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[7]/selected</property>
+<value>2xAIM-9 + GCS-1 MOD I</value>
+</equals>
+<equals>
+<property>controls/armament/station[7]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+<!-- station right 1 -->
+  	
+<model>
+<name>RightDroptank</name>
+<path>Aircraft/F-4EJ/Models/Stores/Tank_370/tank_370_sta5.xml</path>
+
+<offsets>
+<x-m> 0.3</x-m>
+   <y-m> 3.65</y-m>
+   <z-m>-0.85</z-m>
+   <pitch-deg>-2</pitch-deg>
+</offsets>
+</model>	
+
+<animation>
+<type>select</type>
+<object-name>RightDroptank</object-name>      
+<condition>
+<and>
+<equals>
+<property>sim/weight[8]/selected</property>
+<value>370_Gal_tank</value>
+</equals>
+<equals>
+<property>controls/armament/station[8]/release</property>
+<value>false</value>
+</equals>
+</and>
+</condition>
+</animation>
+
+
+
+</PropertyList>
