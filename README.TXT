@@ -1,29 +1,3 @@
-FGUK's McDonnell Douglas F-4EJ Phantom II
-------------------------------------------
-
-http://fguk.eu/index.php/hangar/viewdownload/8-military-jets/94-mcdonnell-douglas-f-4ej-phantom-ii
-
-![FGUK IMAGE](http://www.fguk.eu/images/jdownloads/screenshots/thumbnails/fgfs-screen-0420.png)
-
-This aircraft requires the DAVE PACK available <a href="http://fguk.eu/Lee%20Elliott,%20Josh%20Babcock">HERE</a>
-
-Release notes:
---------------
-
-
-V1.3
-------
- 
-* YASIM version now available.
-* Selectable payload options available on the YASIM version.
-* Both versions have livery selection enabled. NOTE this aircraft uses JPEG liveried. Please read README-Liveries contained in the folder before painting new liveries.
-* Cockpit has been upgraded in both versions.
-* Updated visual effects and lighting.
-
-
-
-********
-
 NOTE:
 
 License:  Creative Commons, (CC-BY-NC-SA)
@@ -32,7 +6,7 @@ F-4EJ
 
 REFUELING:
 
-Click on the REFUEL switch, ARM position to arm the refueling system and extend the refueling probe.  Click on the REFUEL switch again, OFF position to disarm the refueling system and retract the probe.  Fuel onload is at 6000 pounds per minute.
+Click on the REFUEL switch, ARM position to arm the refueling system and open the refueling door.  Click on the REFUEL switch again, OFF position to disarm the refueling system and close the door.  Fuel onload is at 6000 pounds per minute.
 
 FUEL DUMP:
 
@@ -57,6 +31,8 @@ V8Valle - textures
 
 
 Dave Culp  
-davidculp@cox.net
+daveculp@cox.net
+http://dl.dropboxusercontent.com/u/12562954/hangar/hangar.html
+
  
 

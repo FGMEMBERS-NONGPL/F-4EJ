@@ -2,39 +2,22 @@
 
 <!-- License:  Creative Commons, CC-BY-NC-SA   -->
 <!-- Author:   David Culp, Alpha Simulations   -->
-<!-- Email:    davidculp@cox.net               -->
+<!-- Email:    daveculp@cox.net                -->
 
 <PropertyList>
 
  <sim>
 
   <description>Mitsubishi F-4EJ Kai Phantom II</description>
-  <author>Dave Culp StuartC</author>
-  <status>alpha V1.3</status>
+  <author>Dave Culp</author>
+  <status>alpha</status>
 
   <flight-model>jsb</flight-model>
   <aero>F4E-jsbsim</aero>
-  
-  <rating>
-<FDM type="int">4</FDM>
-<systems type="int">2</systems>
-<cockpit type="int">3</cockpit>
-<model type="int">4</model>
-</rating>
 
   <startup>
    <splash-texture>Aircraft/F-4EJ/F-4EJ-splash.png</splash-texture>
   </startup>
-
-  <systems>
-   <refuel>
-     <contact type="bool">false</contact>
-     <type>boom</type>
-   </refuel>
-   <autopilot>
-    <path>Aircraft/F-4EJ/systems/autopilot5.xml</path>
-   </autopilot>
- </systems>
 
   <gui>
    <style>
@@ -54,13 +37,12 @@
   </gui>
 
   <sound>
-   <path>Aircraft/F-4EJ/Sounds/F4F-sound.xml</path>
+   <path>Aircraft/F-4EJ/Sounds/F4EJ-sound.xml</path>
   </sound>
 
   <submodels> 
     <serviceable type="bool">true</serviceable>
     <path>Aircraft/F-4EJ/submodels.xml</path>
-	<path>Aircraft/F-4EJ/models/Stores/loads.xml</path>
   </submodels>
 
   <virtual-cockpit archive="y">true</virtual-cockpit>
@@ -72,37 +54,6 @@
   <model>
    <path>Aircraft/F-4EJ/Models/F-4EJ.xml</path>
   </model>
-  
-   <hud>
-   <path n="1">Aircraft/F-4EJ/Hud/hud.xml</path>
-   <visibility n="1">true</visibility>
-   <palette>
-    <color n="0">
-     <alpha type="float">0.85</alpha>
-     <antialiased type="bool">true</antialiased>
-     <brightness type="float">0.85</brightness>
-     <transparent type="bool">true</transparent>
-     <red type="float">0.38</red>
-     <green type="float">1.0</green>
-     <blue type="float">0.22</blue>
-    </color>
-    <color n="1">
-     <alpha type="float">0.85</alpha>
-     <antialiased type="bool">true</antialiased>
-     <brightness type="float">0.85</brightness>
-     <transparent type="bool">true</transparent>
-     <red type="float">1.0</red>
-     <green type="float">0.2</green>
-     <blue type="float">0.0</blue>
-    </color>
-   </palette>
-    <clipping>
-            <left type="double">-85</left>
-            <right type="double">55</right>
-            <top type="double">25</top>
-            <bottom type="double">-102</bottom>
-         </clipping>
-  </hud>
 
   <flaps>
    <setting>0.000</setting>
@@ -195,197 +146,8 @@
      <int n="12" type="int">0</int>
     </generic>
   </multiplay>
-  
-   <menubar include="Dialogs/menu.xml"/>
-  
-  <!-- payloads -->
-
-<weight n="0">
-<name>pylon1.L</name>
-<tank>9</tank>
-<weight-lb>0</weight-lb>
-<selected>none</selected>
-
-<opt>
-<name>none</name>
-<lbs>0</lbs>
-</opt>
-
-<opt>
-<name>370_Gal_tank</name>
-<lbs>2516.0</lbs>
-<gals>317</gals>
-</opt>
-</weight>
-
-<weight n="1">
-<name>pylon2.L</name>
-<weight-lb>0</weight-lb>
-<selected>none</selected>
-
-<opt>
-<name>none</name>
-<lbs>0</lbs>
-</opt>
-
-<opt>
-<name>2xAIM-9</name>
-<lbs>376</lbs>
-</opt>
-
-<opt>
-<name>2xAIM-9 + GCS-1 MOD I</name>
-<lbs>876</lbs>
-</opt>
-
-<opt>
-<name>2xAIM-9 + GCS-1 MOD II</name>
-<lbs>1126</lbs>
-</opt>
-</weight>
-
-
-
-<weight n="2">
-<name>Front.L.fuselage</name>
-<weight-lb>0</weight-lb>
-<selected>none</selected>
-
-<opt>
-<name>none</name>
-<lbs>0</lbs>
-</opt>
-
-<opt>
-<name>AIM-7</name>
-<lbs>510</lbs>
-</opt>
-</weight>
-
-<weight n="3">
-<name>Rear.L.fuselage</name>
-<weight-lb>0</weight-lb>
-<selected>none</selected>
-
-<opt>
-<name>none</name>
-<lbs>0</lbs>
-</opt>
-
-<opt>
-<name>AIM-7</name>
-<lbs>510</lbs>
-</opt>
-</weight>
-
-<weight n="4">
-<name>pylon.C</name>
-<tank>10</tank>
-<weight-lb>0</weight-lb>
-<selected>none</selected>
-
-<opt>
-<name>none</name>
-<lbs>0</lbs>
-</opt>
-
-<opt>
-<name>370_Gal_tank</name>
-<lbs>2516.0</lbs>
-<gals>317</gals>
-</opt>
-
-<opt>
-<name>600_Gal_tank</name>
-<lbs>4080.0</lbs>
-<gals>600</gals>
-</opt>
-</weight>
-
-<weight n="5">
-<name>Rear.R.fuselage</name>
-<weight-lb>0</weight-lb>
-<selected>none</selected>
-
-<opt>
-<name>none</name>
-<lbs>0</lbs>
-</opt>
-
-<opt>
-<name>AIM-7</name>
-<lbs>510</lbs>
-</opt>
-</weight>
-
-<weight n="6">
-<name>Front.R.fuselage</name>
-<weight-lb>0</weight-lb>
-<selected>none</selected>
-
-<opt>
-<name>none</name>
-<lbs>0</lbs>
-</opt>
-
-<opt>
-<name>AIM-7</name>
-<lbs>510</lbs>
-</opt>
-</weight>
-
-<weight n="7">
-<name>pylon2.R</name>
-<weight-lb>0</weight-lb>
-<selected>none</selected>
-
-<opt>
-<name>none</name>
-<lbs>0</lbs>
-</opt>
-
-<opt>
-<name>2xAIM-9</name>
-<lbs>376</lbs>
-</opt>
-
-<opt>
-<name>2xAIM-9 + GCS-1 MOD I</name>
-<lbs>876</lbs>
-</opt>
-
-<opt>
-<name>2xAIM-9 + GCS-1 MOD II</name>
-<lbs>1126</lbs>
-</opt>
-</weight>
-
-<weight n="8">
-<name>pylon1.R</name>
-<tank>11</tank>
-<weight-lb>0</weight-lb>
-<selected>none</selected>
-
-<opt>
-<name>none</name>
-<lbs>0</lbs>
-</opt>
-
-<opt>
-<name>370_Gal_tank</name>
-<lbs>2516.0</lbs>
-<gals>317</gals>
-</opt>
-</weight>
-  
 
  </sim>
- 
- <environment>
-    <turbulence>
-      <use-cloud-turbulence>true</use-cloud-turbulence>
-    </turbulence>
-  </environment>
 
  <controls>
   <flight>
@@ -397,33 +159,10 @@
    <landing type="double">1</landing>
   </lighting>
   <armament>
-    <station n="0">
-				<release type="bool">false</release>
-			</station>
-			<station n="1">
-				<release type="bool">false</release>
-			</station>
-			<station n="2">
-				<release type="bool">false</release>
-			</station>
-			<station n="3">
-				<release type="bool">false</release>
-			</station>
-			<station n="4">
-				<release type="bool">false</release>
-			</station>
-			<station n="5">
-				<release type="bool">false</release>
-			</station>
-			<station n="6">
-				<release type="bool">false</release>
-			</station>
-			<station n="7">
-				<release type="bool">false</release>
-			</station>
-			<station n="8">
-				<release type="bool">false</release>
-			</station>
+   <gunsight>
+    <power-on type="bool">false</power-on>
+    <intensity type="double">0.3</intensity>
+   </gunsight>
   </armament>
   <gear>
     <brake-parking type="double">1.0</brake-parking>
@@ -585,63 +324,33 @@
   </jsbsim>
  </fdm>
 
-  <instrumentation>
+
+ <instrumentation>
+  <transponder>
+    <serviceable>true</serviceable>
+    <id-code>1200</id-code>
+    <mode-switch>4</mode-switch>
+  </transponder>
   <marker-beacon>
     <volume type="double" archive="y">0.0</volume>
   </marker-beacon>
-  <rwr>
-<display-lighting-intens type="double">0.4</display-lighting-intens>
-<symbology-lighting-intens type="double">1</symbology-lighting-intens>
-</rwr>
   <radar>
-      <range type="int" archive="y">20</range>
-      <range-factor type="double" archive="n">0.001888</range-factor>
-      <minimized type="bool" archive="y">false</minimized>
-      <selected type="int">3</selected>
-
-
-      <!-- inicio en pruebas -->
-	<enabled type="bool">true</enabled>
-	<az-field type="double">120</az-field>
-	<range type="double">150</range>
-	<range-selected type="double">50</range-selected>
-	<radar2-range type="double">150</radar2-range>
-	<display-rdr type="bool">true</display-rdr>
-	<radar-standby type="int">3</radar-standby>
-	<mode>
-	    <rws type="bool">true</rws>
-	    <tws-auto type="bool">false</tws-auto>
-	</mode>
-
- </radar> 
+    <range type="int">40</range>
+  </radar>
   <rdmi-mode type="int">0</rdmi-mode> <!-- 0=TAC, 1=VOR, 2=ADF -->
  </instrumentation>
 
+ <systems>
+   <refuel>
+     <contact type="bool">false</contact>
+     <type>boom</type>
+   </refuel>
+ </systems>
 
  <nasal>
-   <F-4J>
-     <file>Aircraft/F-4EJ/Nasal/light.nas</file>
-	  <file>Aircraft/F-4EJ/Nasal/liveries.nas</file>
-    </F-4J>
-	<low>
-      <file>Aircraft/F-4EJ/Nasal/low.nas</file>
-    </low>
-   <rwr>
- <file>Aircraft/F-4EJ/Models/Instruments/rwr/rwr.nas</file>
-</rwr> 
-<radardist>
-<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-</radardist>
- <radar>
-<file>Aircraft/F-4EJ/Models/Instruments/Radar/radar.nas</file> 
-    </radar>
-<radar2>
-<file>Aircraft/F-4EJ/Models/Instruments/Radar/radar2.nas</file>
-</radar2>  
    <aar>
      <file>Aircraft/DavePack/Nasal/aar_jsbsim.nas</file>
    </aar>
-  
  </nasal>
 
 

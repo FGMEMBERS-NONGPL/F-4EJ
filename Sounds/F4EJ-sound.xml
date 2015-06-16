@@ -3,47 +3,8 @@
 <PropertyList>
 
  <fx>
- 
-   <engine>
-   <name>Engine Exhaust</name>
-   <mode>looped</mode>
-   <path>Aircraft/F-4EJ/Sounds/running.wav</path>
-   <condition>
-    	<property>/engines/engine/running</property>
-    	 <not>
-         	<property>/sim/current-view/internal</property>
-	 	<property>/engines/engine/out-of-fuel</property>
-     	</not>
-   </condition>
-   <position>
-    	<x>6.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-   </position>
-   <orientation>
-	<x>90.0</x>
-    	<y>0.0</y>
-    	<z>0.0</z>
-    	<inner-angle>80.0</inner-angle>
-   	<outer-angle>110.0</outer-angle>
-   	<outer-gain>0.5</outer-gain>
-   </orientation>
-   <volume>
-        <property>engines/engine/n2</property>
-        <factor>0.08</factor>
-        <min>0.4</min>
-	<max>1.0</max>
-   </volume>
-   <pitch>
-    	<property>engines/engine/n2</property>
-	<factor>0.005</factor>
-	<min>0</min>
-	<max>0.7</max>
-   </pitch>
-  </engine>
- 
 
-  <engine>
+  <engine1>
    <name>engine1</name>
    <mode>looped</mode>
    <path>Aircraft/DavePack/Sounds/milpower.wav</path>
@@ -53,12 +14,17 @@
       <property>/sim/current-view/internal</property>
     </not>
    </condition>
+   <position>
+    <x>4.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+   </position>
    <orientation>
-    <x>0.0</x>
+    <x>1.0</x>
     <y>0.0</y>
-    <z>180.0</z>
-    <inner-cone>180.0</inner-cone>
-    <outer-cone>360.0</outer-cone>
+    <z>0.0</z>
+    <inner-angle>100.0</inner-angle>
+    <outer-angle>180.0</outer-angle>
     <outer-gain>0.2</outer-gain>
    </orientation>
    <volume>
@@ -67,9 +33,9 @@
     <min>0.1</min>
     <max>0.5</max>
    </volume>
-  </engine>
+  </engine1>
 
-  <engine>
+  <engine2>
    <name>engine2</name>
    <mode>looped</mode>
    <path>Aircraft/DavePack/Sounds/milpower.wav</path>
@@ -79,12 +45,17 @@
      <property>/sim/current-view/internal</property>
     </not>
    </condition>
+   <position>
+    <x>4.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+   </position>
    <orientation>
-    <x>0.0</x>
+    <x>1.0</x>
     <y>0.0</y>
-    <z>180.0</z>
-    <inner-cone>180.0</inner-cone>
-    <outer-cone>360.0</outer-cone>
+    <z>0.0</z>
+    <inner-angle>100.0</inner-angle>
+    <outer-angle>180.0</outer-angle>
     <outer-gain>0.2</outer-gain>
    </orientation>
    <volume>
@@ -93,9 +64,9 @@
     <min>0.1</min>
     <max>0.5</max>
    </volume>
-  </engine>
+  </engine2>
 
-  <engine>
+  <engine1cockpit>
    <name>engine1-from-cockpit</name>
    <mode>looped</mode>
    <path>Aircraft/DavePack/Sounds/milpower.wav</path>
@@ -109,9 +80,9 @@
     <min>0.05</min>
     <max>0.2</max>
    </volume>
-  </engine>
+  </engine1cockpit>
 
-  <engine>
+  <engine2cockpit>
    <name>engine2-from-cockpit</name>
    <mode>looped</mode>
    <path>Aircraft/DavePack/Sounds/milpower.wav</path>
@@ -125,9 +96,9 @@
     <min>0.05</min>
     <max>0.2</max>
    </volume>
-  </engine>
+  </engine2cockpit>
 
-  <engine>
+  <engine-burner>
    <name>burner</name>
    <mode>looped</mode>
    <path>Aircraft/DavePack/Sounds/afterburner.wav</path>
@@ -154,9 +125,9 @@
     <min>0.4</min>
     <max>0.5</max>
    </volume>
-  </engine>
+  </engine-burner>
 
-  <engine>
+  <engine-burner-cockpit>
    <name>burner-from-cockpit</name>
    <mode>looped</mode>
    <path>Aircraft/DavePack/Sounds/afterburner.wav</path>
@@ -173,9 +144,9 @@
     <min>0.1</min>
     <max>0.1</max>
    </volume>
-  </engine>
+  </engine-burner-cockpit>
 
-  <engine>
+  <engine1-whine>
    <name>compressor-whine-external-engine0</name>
    <path>Sounds/turbojet_fan.wav</path>
    <mode>looped</mode>
@@ -188,12 +159,17 @@
       <value>1</value>
     </greater-than>
    </condition>
-   <orientation>
-    <x> 0.0</x>
-    <y> 0.0</y>
-    <z> 180.0</z>
-    <inner-cone>50.0</inner-cone>
-    <outer-cone>180.0</outer-cone>
+   <position>     <!-- meters -->
+    <x>-4.0</x>   <!-- +X = aft  -->
+    <y> 1.0</y>   <!-- +Y = left -->
+    <z> 0.0</z>   <!-- +Z = up   -->
+   </position>
+   <orientation>  <!-- normalized vector -->
+    <x>-1.0</x>   <!-- +X = aft  -->
+    <y> 0.0</y>   <!-- +Y = left -->
+    <z> 0.0</z>   <!-- +Z = up   -->
+    <inner-angle>50.0</inner-angle>
+    <outer-angle>180.0</outer-angle>
     <outer-gain>0.5</outer-gain>
    </orientation>
    <pitch>
@@ -206,9 +182,9 @@
     <min>0.00</min>
     <max>0.167</max>
    </volume>
-  </engine>
+  </engine1-whine>
 
-  <engine>
+  <engine2-whine>
    <name>compressor-whine-external-engine1</name>
    <path>Sounds/turbojet_fan.wav</path>
    <mode>looped</mode>
@@ -221,12 +197,17 @@
       <value>1</value>
     </greater-than>
    </condition>
-   <orientation>
-    <x> 0.0</x>
-    <y> 0.0</y>
-    <z> 180.0</z>
-    <inner-cone>50.0</inner-cone>
-    <outer-cone>180.0</outer-cone>
+   <position>     <!-- meters -->
+    <x>-4.0</x>   <!-- +X = aft  -->
+    <y>-1.0</y>   <!-- +Y = left -->
+    <z> 0.0</z>   <!-- +Z = up   -->
+   </position>
+   <orientation>  <!-- normalized vector -->
+    <x>-1.0</x>   <!-- +X = aft  -->
+    <y> 0.0</y>   <!-- +Y = left -->
+    <z> 0.0</z>   <!-- +Z = up   -->
+    <inner-angle>50.0</inner-angle>
+    <outer-angle>180.0</outer-angle>
     <outer-gain>0.5</outer-gain>
    </orientation>
    <pitch>
@@ -239,9 +220,7 @@
     <min>0.00</min>
     <max>0.167</max>
    </volume>
-  </engine>
-  
-  
+  </engine2-whine>
 
   <tire-rumble>
    <name>tire-rumble</name>
@@ -325,7 +304,7 @@
     <property>/sim/current-view/internal</property>
     <greater-than>
      <property>/fdm/jsbsim/aero/alpha-deg</property>
-     <value>8.6</value>
+     <value>9.0</value>
     </greater-than>
     <greater-than>
      <property>velocities/airspeed-kt</property>
@@ -359,7 +338,7 @@
    </volume>
   </speedbrake-buffet>
 
-  <!-- SUU-23A gun pod -->
+  <!-- gun -->
   <guns>
    <name>gunfire</name>
    <mode>looped</mode>
@@ -378,75 +357,6 @@
   </crash>
 
 
-  <voice>
-  <name>Geforce-breath-vox</name>
-  <path>Aircraft/F-4EJ/Sounds/Geforce.wav</path>
-  <condition>
-   <greater-than>
-    <property>/accelerations/pilot/z-accel-fps_sec</property>
-    <value>-161</value>
-   </greater-than>   
-  </condition>
-<volume>
-<factor>0.9</factor>
-</volume>
- </voice>
-
-<voice>
-  <name>Geforce-vox</name>
-  <path>Aircraft/F-4EJ/Sounds/geforce1.wav</path>
-  <condition>
-   <less-than>
-    <property>/accelerations/pilot/z-accel-fps_sec</property>
-    <value>-225</value>
-   </less-than>   
-  </condition>
-<volume>
-<factor>0.9</factor>
-</volume>
- </voice>
- 
-  <!-- Sonic Boom -->
-  <sonicboom>
-   <name>Sonic Boom</name>
-	<mode>once</mode>
-   <path>Aircraft/F-4EJ/Sounds/sonicboom.wav</path>
-   <condition>
-   <and>
-	    <greater-than>
-	     	<property>/velocities/mach</property>
-	     	<value>1.0</value>
-	    </greater-than>
-	    <equals>
-		    <property>/sim/current-view/internal</property>
-		    <value>false</value>
-		</equals>
-	</and>
-   </condition>
-  </sonicboom>
-  
-  <!-- flyby -->
-		<flyby>
-			<name>fly-by</name>
-			<mode>looped</mode>
-			<path>Aircraft/F-4EJ/Sounds/flyby.wav</path>
-			<condition>
-				<equals>
-					<property>sim/current-view/view-number</property>
-					<value>6</value>
-				</equals>
-				<not>
-         	<property>/sim/current-view/internal</property>
-	 	<property>/engines/engine/out-of-fuel</property>
-     	</not>
-		</condition>
-			<!-- <volume>
-				<property>velocities/airspeed-kt</property>
-				<factor>0.001</factor>
-			</volume>
-			-->
-		</flyby>
-  
 </fx>
  
 </PropertyList>
